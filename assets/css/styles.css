@@ -1,0 +1,61 @@
+:root {
+  --white: #FFFFFF;
+  --cream: #F2EAE2;
+  --aurometal-saurus: #6C7289;
+  --deep-aquamarine: #3D8168;
+  --deep-aquamarine-hover: #1A4032;
+  --gunmetal: #1C232B;
+  --12px: 0.75rem;
+  --14px: 0.875rem;
+  --16px: 1rem --24px: 1.5rem;
+  --32px: 2rem;
+
+
+}
+
+body,
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cream);
+  margin: 0;
+  min-height: 100vh;
+}
+
+
+main {
+  background-color: var(--white);
+  width: 21.438rem;
+  border-radius: 10px;
+}
+
+
+
+img {
+  max-inline-size: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+@media (min-width: 48em) {
+  main {
+    flex-direction: row;
+    width: 37.5rem;
+  }
+
+  header,
+  .card-body {
+    width: 50%;
+    height: 28.125rem;
+  }
+
+  img {
+    border-radius: 10px 0 0 10px;
+    object-fit: fill;
+  }
+}
